@@ -1,10 +1,10 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=einat-ebpf
-PKG_UPSTREAM_VERSION:=0.1.4
+PKG_UPSTREAM_VERSION:=0.1.5
 PKG_UPSTREAM_GIT7VER:=
 PKG_VERSION:=$(PKG_UPSTREAM_VERSION)$(if $(PKG_UPSTREAM_GIT7VER),~$(call version_abbrev,$(PKG_UPSTREAM_GIT7VER)))
-PKG_RELEASE:=30
+PKG_RELEASE:=31
 
 ifeq ($(PKG_UPSTREAM_GIT7VER),)
 PKG_SOURCE_URL:=https://codeload.github.com/EHfive/einat-ebpf/tar.gz/refs/tags/v$(PKG_UPSTREAM_VERSION)?
